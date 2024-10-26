@@ -9,49 +9,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Calendar, MapPin, Utensils, Wifi } from "lucide-react";
+import Header from "@/components/ui/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-white shadow">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-gray-900">
-                Casabello Guest House
-              </h1>
-            </div>
-            <div className="hidden sm:block">
-              <div className="ml-10 flex items-baseline space-x-6">
-                <Link
-                  href="/rooms"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
-                >
-                  Rooms
-                </Link>
-                <Link
-                  href="/bookings"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
-                >
-                  Book Now
-                </Link>
-                <Link
-                  href="/amenities"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
-                >
-                  Amenities
-                </Link>
-                <Link
-                  href="/contact"
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md"
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
       <main className="flex-grow">
         <section className="relative h-[60vh]">
